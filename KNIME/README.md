@@ -1,1 +1,1 @@
-How to use KNIME for BigData Analysis
+How to use KNIME Analytical Platform for BigData Analysis
