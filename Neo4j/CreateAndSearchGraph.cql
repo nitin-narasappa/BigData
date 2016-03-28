@@ -53,4 +53,9 @@
 // Shortest path between Actors Tom Hanks and Keanu Reeves
 MATCH p=shortestPath( (tom:Person {name:"Tom Hanks"})-[*]-(keenu:Person {name:"Keanu Reeves"}) ) RETURN p
 
- 
+// Delete all movies and actors
+MATCH (a:Person),(m:Movie) OPTIONAL MATCH (a)-[r1]-(), (m)-[r2]-() DELETE a,r1,m,r2
+
+// Confirm, all deleted
+MATCH (n) RETURN n
+
