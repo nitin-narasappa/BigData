@@ -1,1 +1,46 @@
 
+The tool (Enterprise version) provides the following builtin features
+  - Search
+  - Pivot
+  - Report
+  - Alert
+  - Dashboard 
+  
+  Search:
+  Enter the following text in the search input and splunk will return all the events with status=404.
+  
+  status=404
+  
+  With this result, the top panel shows the events chart based on days, the left panel shows the additional columns/fields related to the events.
+  The serch could be modified by clicking these fields/columns.
+  
+  There are 4 tabs displayed: Events, Pattern, Statistics and Visualisation. Click on each of these tabs to get more insight of the data.
+  
+  Pivot:
+  Select Pivot. The top panel contains different filters and column/row split options. The left panel shows different visual representations available -
+   bar charts, pie charts, radial gauge, filler gauge etc. The main section shows the result of filtered data.
+   
+   Report:
+   Reports are based on single searches and can include visualizations, statistics and/or events. Click the name to view the report. 
+   Open the report in Pivot or Search to refine the parameters or further explore the data.    This report could be opened in the 
+   Search tab by selecting the options available on the right click menu.  The top toolbar contains "App" link which could be used 
+   to lookup and install other reporting apps that can in installed on splunk.
+   
+   Alerts:
+   Alerts set a condition that triggers an action, such as sending an email that contains the results of the triggering search to a list of people. Click the name to view the alert. 
+   Open the alert in Search to refine the parameters
+   
+   Dashboard:
+   Dashboards are comprised of multiple reports or inline searches. 
+   
+   Settings:
+   There is link to "Settings" in the top toolbar. This Settings has various links to import data, Source Types and other configurations. 
+   
+        Data Input:
+          Set up data inputs from files and directories, network ports, and scripted inputs. Two types of input - local and forwarded. Click the 
+          links provided to configure these options.
+   
+   
+   
+   
+  
