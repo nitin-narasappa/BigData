@@ -50,4 +50,7 @@
 //  List co-actors of Tom Hanks:
   MATCH (tom:Person {name:"Tom Hanks"})-[:ACTED_IN]->(m)<-[:ACTED_IN]-(coActors) RETURN coActors.name
   
+// Shortest path between Actors Tom Hanks and Keanu Reeves
+MATCH p=shortestPath( (tom:Person {name:"Tom Hanks"})-[*]-(keenu:Person {name:"Keanu Reeves"}) ) RETURN p
+
  
